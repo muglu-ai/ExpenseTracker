@@ -1,5 +1,7 @@
 using ExpenseTracker.Models;
 using Microsoft.EntityFrameworkCore;
+using Syncfusion.Licensing;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -9,6 +11,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 var app = builder.Build();
 
+// Register Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Mgo+DSMBMAY9C3t2V1hhQlJNfV5AQmBIYVp/TGpJfl96cVxMZVVBJAtUQF1hSn5UdEdjW3tbc3VVQmRb");
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
