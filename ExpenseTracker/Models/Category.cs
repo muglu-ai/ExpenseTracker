@@ -9,14 +9,14 @@ namespace ExpenseTracker.Models
         [Key]
         public int CategoryId { get; set; }
         
-        [Column(TypeName = "varchar(50)")]
+        [Column(TypeName = "nvarchar(50)")]
         [Required(ErrorMessage = "Title is required.")]
         public string Title { get; set; }
         
-        [Column(TypeName = "varchar(5)")]
+        [Column(TypeName = "nvarchar(5)")]
         public string Icon { get; set; }
         
-        [Column(TypeName = "varchar(10)")]
+        [Column(TypeName = "nvarchar(10)")]
         //type
         public string Type { get; set; } = "Expense";
         

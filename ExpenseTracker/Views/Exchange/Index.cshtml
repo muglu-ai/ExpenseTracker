@@ -1,0 +1,83 @@
+
+@model ExpenseTracker.Models.ExchangeRate
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class = "row">
+    <div class="col-md-6">
+        <div class="widget h-100">
+            <div class=" p-4">
+                <h5 class="fw-bold">Currency Convertor</h5>
+            </div>
+            <div class="px-4 pb-4">
+                <div class="mb-3">
+                    <ejs-numerictextbox id="amount" value="@Model.Amount" placeholder="Enter Amount" floatLabelType="Always" min=0></ejs-numerictextbox>
+                </div>
+                <div class="mb-3">
+                    <ejs-textbox id="from" placeholder="From Currency(Enter Code)"></ejs-textbox>
+                </div>
+                <div class="mb-3">
+                    <ejs-textbox id="to" placeholder="To Currency(Enter Code)"></ejs-textbox>
+                </div>
+                <div class="mb-3">
+                    @* <ejs-button id="getLatestRatesBtn" type="submit" content="Get Latest Rates" cssClass="e-success"></ejs-button> *@
+                    <ejs-button id="convertCurrencyBtn" type="submit" content="Convert Currency" onclick="convertCurrency()" cssClass="e-success"></ejs-button>
+                </div>
+                <p id="result">@Model.ConvertedAmount</p>
+            </div>
+            @* <div id="result"> *@
+            @*     <div class="d-flex flex-row justify-content-between"> *@
+            @*         <span class="lead">Converted Amount</span> *@
+            @*         <span id="convertedAmount" class="lead"></span> *@
+            @*     </div> *@
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="widget">
+            <div class="p-4">
+                <h5 class ="fw-bold"> List of Currency with their Currency Code</h5>
+                <ol>
+                    <li>Indian Rupee (INR) </li>
+                    <li>United States Dollar (USD)</li>
+                    <li>Canadian Dollar (CAD)</li>
+                    <li>British Pound (GBP)</li>
+                    <li>Japanese Yen (JPY)</li>
+                    <li>Chinese Yuan (CNY)</li>
+                    <li>Swiss Franc (CHF)</li>
+
+                </ol>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+
+@section Scripts
+{
+    <script>
+    function convertCurrency() {
+                var amount = document.getElementById("amount").value;
+                var fromCurrency = document.getElementById("from").value;
+                var toCurrency = document.getElementById("to").value;
+    
+                var apiUrl = `https://api.apilayer.com/exchangerates_data/convert?to=${toCurrency}&from=${fromCurrency}&amount=${amount}`;
+    
+                fetch(apiUrl, {
+                    headers: {
+                        "apikey": "LAWSs8d6jEZeTBUHvFP4eQeeB4jij1zn"
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    var result = data.result.toFixed(2);
+                    document.getElementById("result").innerHTML = `Converted Amount: ${result} ${toCurrency}`;
+                })
+                .catch(error => {
+                    console.log("Error:", error);
+                    document.getElementById("result").innerHTML = "Error occurred while converting currency.";
+                });
+            }
+    </script>
+}

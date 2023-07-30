@@ -1,17 +1,19 @@
-@*
+﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
+
+@model ExpenseTracker.Models.ExchangeRate
 @{
     ViewData["isDashboard"] = true;
 }
 
-@*Summary Widgets*@
+
 <div class="row mb-4">
 
     <div class="col-md-4">
         <div class="d-flex flex-row widget summary income">
             <div class="d-flex flex-column justify-content-center p-5">
-                <i class="fa-solid fa-dollar-sign fa-2xl"></i>
+                <i class="fa-solid fa-indian-rupee-sign fa-2xl"></i>
             </div>
             <div class="d-flex flex-column m-auto py-3">
                 <span class="lead">Total Income</span>
@@ -23,7 +25,7 @@
     <div class="col-md-4">
         <div class="d-flex flex-row widget summary expense">
             <div class="d-flex flex-column justify-content-center p-5">
-                <i class="fa-solid fa-dollar-sign fa-2xl"></i>
+                <i class="fa-solid fa-indian-rupee-sign fa-2xl"></i>
             </div>
             <div class="d-flex flex-column m-auto py-3">
                 <span class="lead">Total Expense</span>
@@ -35,7 +37,7 @@
     <div class="col-md-4">
         <div class="d-flex flex-row widget summary balance">
             <div class="d-flex flex-column justify-content-center p-5">
-                <i class="fa-solid fa-dollar-sign fa-2xl"></i>
+                <i class="fa-solid fa-indian-rupee-sign fa-2xl"></i>
             </div>
             <div class="d-flex flex-column m-auto py-3">
                 <span class="lead">Balance</span>
@@ -111,7 +113,7 @@
             </div>
             <div class="px-4 pb-4">
                 <ejs-grid id="recent-transactions"
-                dataSource="@ViewBag.RecentTransactions" gridLines="None">
+                          dataSource="@ViewBag.RecentTransactions" gridLines="None">
                     <e-grid-columns>
                         <e-grid-column headerText="Category" field="CategoryTitleWithIcon"></e-grid-column>
                         <e-grid-column headerText="Date" field="Date" type="date" format="MMM-dd-yy"></e-grid-column>
@@ -121,11 +123,8 @@
             </div>
         </div>
     </div>
-    <div class="col-md-6">
-        <div class="widget h-100">
-            <div class="d-flex justify-content-center align-items-center h-100">
-                <span><i class="fa-solid fa-plus fa-2xl"></i> Widget</span>
-            </div>
         </div>
-    </div>
-</div>
+    
+            
+        
+
