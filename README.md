@@ -40,6 +40,26 @@ git clone https://github.com/muglu-ai/ExpenseTracker.git
 
 4. Access the application through your web browser to start managing your finances.
 
+## Screenshots
+1. Dashboard
+   
+![Finance Tracker Dashboard](https://github.com/muglu-ai/ExpenseTracker/blob/master/Screenshot/Screenshot%20(1).png)
+
+2. Recent Transaction
+
+![Finance Tracker Recent Transactions](https://github.com/muglu-ai/ExpenseTracker/blob/master/Screenshot/Screenshot%20(2).png?raw=true)
+
+3. Finance Expense Category
+   
+![Finance Expense Category](https://github.com/muglu-ai/ExpenseTracker/assets/51746097/eef112db-3524-4883-a06f-e5faadbf4c81)
+
+4. Currency Convertor 
+ ![Currency Convertor](https://github.com/muglu-ai/ExpenseTracker/assets/51746097/1b7bebe1-2a5f-4cbe-b900-37d83ce00a20)
+
+
+
+
+   
 ## Contributing
 
 We welcome contributions from the community! If you'd like to contribute to the project or report issues, please check our [Contribution Guidelines](CONTRIBUTING.md).
@@ -47,5 +67,5 @@ We welcome contributions from the community! If you'd like to contribute to the 
 
 ## Contact
 
-For inquiries and support, please contact [Your Name](mailto:manishk_sharma@outlook.com).
+For inquiries and support, please contact [Manish Kumar Sharma](mailto:manishk_sharma@outlook.com).
 
