@@ -43,11 +43,12 @@ git clone https://github.com/muglu-ai/ExpenseTracker.git
 ## Screenshots
 1. Dashboard
    
-![Finance Tracker Dashboard](https://github.com/muglu-ai/ExpenseTracker/blob/master/Screenshot/Screenshot%20(1).png)
+![Finance Tracker Dashboard](https://github.com/muglu-ai/ExpenseTracker/assets/51746097/94758691-d90f-4f13-a68d-c88fae5b98fe)
 
 2. Recent Transaction
 
-![Finance Tracker Recent Transactions](https://github.com/muglu-ai/ExpenseTracker/blob/master/Screenshot/Screenshot%20(2).png?raw=true)
+![Finance Tracker Recent Transactions](https://github.com/muglu-ai/ExpenseTracker/assets/51746097/0f0c4300-22d2-45a6-8175-7d944a39c1f7)
+
 
 3. Finance Expense Category
    
