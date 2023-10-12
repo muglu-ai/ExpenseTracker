@@ -1,6 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseTracker", "ExpenseTracker\ExpenseTracker.csproj", "{7F4DB209-91D5-4F7A-992F-E7089C190FC2}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpenseTracker", "ExpenseTracker\ExpenseTracker.csproj", "{7F4DB209-91D5-4F7A-992F-E7089C190FC2}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{3405BD58-4A13-423B-BB01-7C9A01FD2D5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,7 +15,15 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7F4DB209-91D5-4F7A-992F-E7089C190FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7F4DB209-91D5-4F7A-992F-E7089C190FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F4DB209-91D5-4F7A-992F-E7089C190FC2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{7F4DB209-91D5-4F7A-992F-E7089C190FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F4DB209-91D5-4F7A-992F-E7089C190FC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3405BD58-4A13-423B-BB01-7C9A01FD2D5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3405BD58-4A13-423B-BB01-7C9A01FD2D5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3405BD58-4A13-423B-BB01-7C9A01FD2D5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3405BD58-4A13-423B-BB01-7C9A01FD2D5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
